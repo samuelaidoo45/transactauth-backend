@@ -73,19 +73,13 @@ TransactShield is a secure authentication system designed to streamline user reg
    - Create a `.env` file in the project root with the following contents:
      ```
      DATABASE_URL=postgresql://username:password@localhost:5432/auth_app
-     SECRET_KEY=your-secret-key
      ALGORITHM=HS256
      ACCESS_TOKEN_EXPIRE_MINUTES=30
      ```
 
-5. **Apply Migrations**:
-   ```bash
-   alembic upgrade head
-   ```
-
 6. **Start the Server**:
    ```bash
-   uvicorn app.main:app --reload
+   fastapi run
    ```
    - The backend will be running at `http://127.0.0.1:8000`.
 
@@ -94,7 +88,7 @@ TransactShield is a secure authentication system designed to streamline user reg
 
 ## **Hosted Links**
 
-- **Backend**: [https://your-backend-link.com](https://your-backend-link.com)
+- **Backend**: [https://transactauth-backend.onrender.com](https://transactauth-backend.onrender.com)
 
 ---
 
