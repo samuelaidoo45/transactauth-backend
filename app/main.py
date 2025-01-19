@@ -5,7 +5,6 @@ from fastapi.openapi.utils import get_openapi
 from fastapi.middleware.cors import CORSMiddleware
 
 
-
 # Create tables on application start
 Base.metadata.create_all(bind=engine)
 
